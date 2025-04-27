@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: coinflick-bot
+    env: python
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: python coinflick_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7532590160:AAGre9QQ54yAM3VpdueELMTdxwxPJBQns-4
